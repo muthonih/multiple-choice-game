@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Answer the following questions to choose your response.</h1>
+        <div class="image-container">
+            <img src="receive.jpg" alt="Player Image" id="player-image">
+        </div>
+        <form id="quizForm">
+            <div class="question" id="q1">
+                <p>1. Which part of the arm contacts the ball?</p>
+                <label><input type="radio" name="q1" value="a"> Fingers</label><br>
+                <label><input type="radio" name="q1" value="b"> Forearm part</label><br>
+                <label><input type="radio" name="q1" value="c"> Shoulder</label>
+            </div>
+            <div class="question" id="q2">
+                <p>2. How do you position your body when receiving the ball?</p>
+                <label><input type="radio" name="q2" value="a"> Stand with legs shoulder width apart, body slightly bent forward, and eyes focused on the incoming ball.</label><br>
+                <label><input type="radio" name="q2" value="b"> Stand with the legs together, body slightly bent forward, and eyes focused on the incoming ball.</label><br>
+                <label><input type="radio" name="q2" value="c"> Stand with legs shoulder width apart, body slightly bent forward, and eyes focused away from the ball.</label>
+            </div>
+            <button type="button" onclick="validateAnswers()">Submit</button>
+            <button type="button" onclick="undoSelection()">Undo</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
